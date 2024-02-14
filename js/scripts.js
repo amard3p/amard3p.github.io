@@ -54,7 +54,7 @@
     });
 
     // Create timeline
-    $('#Extracurricularience-timeline').each(function() {
+    $('#experienceience-timeline').each(function() {
 
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
