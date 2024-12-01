@@ -38,7 +38,7 @@ This project involves the creation of an interactive **Workforce Analytics Dashb
 ---
 
 ---
-![KPI 4 , KPI 5  and KPI 6  Dashboard](projects/Diversity and Inclusion/Screenshot 2024-08-24 073015.jpg)
+![KPI 4 , KPI 5  and KPI 6  Dashboard](https://github.com/amard3p/amard3p.github.io/blob/86d9a730afcc6adb2422a46f4db24b4d2751fb40/projects/Diversity%20and%20Inclusion/Screenshot%202024-08-24%20073015.jpg)
 #### **4. KPI 4 - Performance Rating**
 - Visualizes performance ratings (1 = Excellent, 4 = Bad) by gender.
 - Highlights the distribution of performance ratings for males and females, indicating consistent male dominance across all performance levels.
