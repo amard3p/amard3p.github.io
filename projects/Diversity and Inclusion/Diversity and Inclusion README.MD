@@ -19,6 +19,8 @@ This project involves the creation of an interactive **Workforce Analytics Dashb
 
 ### **Key Features**
 
+---
+![KPI 1 , KPI 2 and KPI 3  Dashboard](projects/Diversity and Inclusion/Screenshot 2024-08-24 070605.jpg)
 #### **1. KPI 1 - Hiring Analysis**
 - **Gender Distribution Across Job Levels**: 
   - Displays hiring trends for males and females at various job levels (Executive to Junior Officer).
@@ -33,7 +35,10 @@ This project involves the creation of an interactive **Workforce Analytics Dashb
 #### **3. KPI 3 - Turnover Rate Analysis**
 - Compares FY19 performance ratings of employees who stayed vs. those who left in FY20.
 - Reveals trends in employee turnover rates by job level and gender.
+---
 
+---
+![KPI 4 , KPI 5  and KPI 6  Dashboard](projects/Diversity and Inclusion/Screenshot 2024-08-24 073015.jpg)
 #### **4. KPI 4 - Performance Rating**
 - Visualizes performance ratings (1 = Excellent, 4 = Bad) by gender.
 - Highlights the distribution of performance ratings for males and females, indicating consistent male dominance across all performance levels.
@@ -66,3 +71,8 @@ This project involves the creation of an interactive **Workforce Analytics Dashb
 1. Clone the repository and load the Power BI file.
 2. Connect your workforce dataset to the report.
 3. Explore the dashboards interactively by filtering data by job level, gender, or age.
+
+
+
+
+
