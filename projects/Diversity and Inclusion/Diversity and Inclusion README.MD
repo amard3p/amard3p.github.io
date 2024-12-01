@@ -2,6 +2,8 @@
 #### PwC Switzerland - Power BI Job Simulation
 Credential ID
 vJ57NKNEPWkEaHfWt
+
+
 Credential URL
 https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_G6LMbQK9mwrAeWLzs_1707838452636_completion_certificate.pdf
 
