@@ -20,7 +20,7 @@ This project involves the creation of an interactive **Workforce Analytics Dashb
 ### **Key Features**
 
 ---
-![KPI 1 , KPI 2 and KPI 3  Dashboard](projects/Diversity and Inclusion/Screenshot 2024-08-24 070605.jpg)
+![KPI 1 , KPI 2 and KPI 3  Dashboard](https://github.com/amard3p/amard3p.github.io/blob/86d9a730afcc6adb2422a46f4db24b4d2751fb40/projects/Diversity%20and%20Inclusion/Screenshot%202024-08-24%20070605.jpg)
 #### **1. KPI 1 - Hiring Analysis**
 - **Gender Distribution Across Job Levels**: 
   - Displays hiring trends for males and females at various job levels (Executive to Junior Officer).
@@ -37,7 +37,6 @@ This project involves the creation of an interactive **Workforce Analytics Dashb
 - Reveals trends in employee turnover rates by job level and gender.
 ---
 
----
 ![KPI 4 , KPI 5  and KPI 6  Dashboard](https://github.com/amard3p/amard3p.github.io/blob/86d9a730afcc6adb2422a46f4db24b4d2751fb40/projects/Diversity%20and%20Inclusion/Screenshot%202024-08-24%20073015.jpg)
 #### **4. KPI 4 - Performance Rating**
 - Visualizes performance ratings (1 = Excellent, 4 = Bad) by gender.
