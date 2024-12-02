@@ -98,17 +98,17 @@
 
         <!-- End #education -->
 
-      <div id="projects" class="background-alt">
+ <div id="projects" class="background-alt">
     <h2 class="heading">Projects</h2>
     <div class="container">
         <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
             <!-- Project: Hospitality -->
-            <div class="project shadow-large" style="width: 48%; margin-bottom: 20px;">
+            <div class="project shadow-large" style="width: 48%; margin-bottom: 20px; position: relative; overflow: hidden;">
                 <div class="project-image">
-                    <img src="projects/CodeBasics.io_hospitality%20domain/CodeBasic.io%20%20Hospitality%20Domain%20Dashboard%20.jpg" style="width: 100%;" alt="Hospitality Dashboard Image">
+                    <img src="projects/CodeBasics.io_hospitality%20domain/CodeBasic.io%20%20Hospitality%20Domain%20Dashboard%20.jpg" style="width: 100%; transition: transform 0.3s ease;" alt="Hospitality Dashboard Image">
                 </div>
                 <!-- End .project-image -->
-                <div class="project-info">
+                <div class="project-info" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                     <h3>Hospitality Domain Dashboard</h3>
                     <p>The Hospitality Dashboard provides key insights into hotel performance, focusing on revenue, occupancy rates, and booking trends. Highlights include:
                     <ul>
@@ -117,19 +117,19 @@
                         <li><b>DSRN:</b> 2,528 daily sellable room nights over the given period.</li>
                     </ul>
                     </p>
-                    <a href="https://github.com/amard3p/amard3p.github.io/blob/70a95782221431e399dbb8a1c9fe70be49648ec4/projects/CodeBasics.io_hospitality%20domain/CodeBasics.io_hospitality%20domain%20%20report.md" class="btn-rounded">View Project</a>
+                    <a href="https://github.com/amard3p/amard3p.github.io/blob/70a95782221431e399dbb8a1c9fe70be49648ec4/projects/CodeBasics.io_hospitality%20domain/CodeBasics.io_hospitality%20domain%20%20report.md" class="btn-rounded" style="color: #fff; text-decoration: underline;">View Project</a>
                 </div>
                 <!-- End .project-info -->
             </div>
             <!-- End .project -->
 
             <!-- Project: Diversity and Inclusion -->
-            <div class="project shadow-large" style="width: 48%; margin-bottom: 20px;">
+            <div class="project shadow-large" style="width: 48%; margin-bottom: 20px; position: relative; overflow: hidden;">
                 <div class="project-image">
-                    <img src="https://github.com/amard3p/amard3p.github.io/blob/7950c21fb90368010de6aea086ec7674a121de66/projects/Diversity%20and%20Inclusion/Screenshot%202024-08-24%20070605.jpg" style="width: 100%;" alt="Diversity and Inclusion Image">
+                    <img src="https://github.com/amard3p/amard3p.github.io/blob/7950c21fb90368010de6aea086ec7674a121de66/projects/Diversity%20and%20Inclusion/Screenshot%202024-08-24%20070605.jpg" style="width: 100%; transition: transform 0.3s ease;" alt="Diversity and Inclusion Image">
                 </div>
                 <!-- End .project-image -->
-                <div class="project-info">
+                <div class="project-info" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                     <h3>Diversity and Inclusion Analysis</h3>
                     <p>Comprehensive analysis of workplace diversity and inclusion focusing on hiring, promotion, and workplace culture. Key findings:
                     <ul>
@@ -138,7 +138,7 @@
                         <li><b>Outcomes:</b> Enhanced employee engagement and improved workplace culture.</li>
                     </ul>
                     </p>
-                    <a href="https://github.com/amard3p/amard3p.github.io/blob/7950c21fb90368010de6aea086ec7674a121de66/projects/Diversity%20and%20Inclusion/Diversity%20and%20Inclusion%20README.MD" class="btn-rounded">View Project</a>
+                    <a href="https://github.com/amard3p/amard3p.github.io/blob/7950c21fb90368010de6aea086ec7674a121de66/projects/Diversity%20and%20Inclusion/Diversity%20and%20Inclusion%20README.MD" class="btn-rounded" style="color: #fff; text-decoration: underline;">View Project</a>
                 </div>
                 <!-- End .project-info -->
             </div>
@@ -147,6 +147,30 @@
     </div>
 </div>
 <!-- End #projects -->
+
+<script>
+    document.querySelectorAll('.project').forEach(project => {
+        const image = project.querySelector('.project-image img');
+        const info = project.querySelector('.project-info');
+
+        project.addEventListener('mouseenter', () => {
+            image.style.transform = 'scale(1.1)';
+            info.style.opacity = '1';
+        });
+
+        project.addEventListener('mouseleave', () => {
+            image.style.transform = 'scale(1)';
+            info.style.opacity = '0';
+        });
+
+        project.addEventListener('click', () => {
+            const link = info.querySelector('a');
+            if (link) {
+                window.open(link.href, '_blank');
+            }
+        });
+    });
+</script>
 
         <!-- End #projects -->
 
