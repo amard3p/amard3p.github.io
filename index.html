@@ -16,6 +16,10 @@
         background-color: #121212;
         color: #ffffff;
     }
+    section {
+        margin:20px;
+        padding:10px;
+    }
 
     header {
         text-align: center;
@@ -31,7 +35,7 @@
         color: #00ff00;
     }
 
-    .btn-resume {
+    .btn {
         background-color: #00ff00;
         color: #121212;
         border: none;
@@ -48,7 +52,6 @@
     .certifications,
     footer {
         padding: 20px;
-
         background-color: #1e1e1e;
         border-radius: 10px;
     }
@@ -98,7 +101,7 @@
         text-decoration: underline;
     }
 
-    <style>body {
+    body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -183,13 +186,14 @@
         <div class="profile-card">
            <h1>Hello, I am <span class="name"> Amar </span></h1>
             <p class="role">Data Analyst</p>
-            <p class="contact-info">+91 9763202340</p>
-            <button class="btn-resume">Resume</button>
+            <p class="contact-info">+91 9763202340</p> 
             <div class="contact-links">
             <a href="mailto:dhaleamardeep.work+github@gmail.com">Email</a>
             <a href="www.linkedin.com/in/amar-d-a3323833b">LinkedIn</a>
             <a href="https://github.com/amard3p">GitHub</a>
-        </div>
+            </div>
+            <button class="btn">Resume</button>
+           
     </header>
 
     <section class="about">
@@ -212,6 +216,8 @@
             <li>SQL</li>
             <li>Python</li>
             <li>Tableau</li>
+            <li>PostgresSQL</li>
+            <li>Data</li>
         </ul>
     </section>
 
@@ -225,7 +231,7 @@
             <img src="project1.gif" alt="Sales Analytics">
 
             <p>Created an extensive sales analytics dashboard for Atliq Hardware.</p>
-            <button onclick="toggleProjectDetails('project1-details')" class="btn-resume">See My Work</button>
+            <button onclick="toggleProjectDetails('project1-details')" class="btn">See My Work</button>
         </div>
 
         <!-- Project 2 -->
@@ -234,7 +240,7 @@
             <img src="project2.gif" alt="Coffee Shop Dashboard">
 
             <p>Developed an interactive dashboard to track daily sales and inventory metrics.</p>
-            <button onclick="toggleProjectDetails('project2-details')" class="btn-resume">See My Work</button>
+            <button onclick="toggleProjectDetails('project2-details')" class="btn">See My Work</button>
         </div>
 
         <!-- Overlay Background -->
@@ -296,13 +302,7 @@
         </div>
     </section>
 
-    <footer>
-        <h2>Let's Connect</h2>
-        <p>Feel free to reach out to discuss new projects or opportunities.</p>
-        
-        </div>
-    </footer>
-    <script>
+     <script>
         function toggleProjectDetails(projectId) {
             document.getElementById("overlay-background").style.display = "block";
             document.getElementById(projectId).style.display = "block";
