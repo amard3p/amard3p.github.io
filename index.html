@@ -1,244 +1,328 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - amar dhale </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    /* General Reset */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: #1e1e1e;
+    }
+
+    .profile-card {
+        margin: auto;
+    }
+
+    .profile-image {
+        width: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .name {
+        color: #00ff00;
+    }
+
+    .btn-resume {
+        background-color: #00ff00;
+        color: #121212;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .experience,
+    .certifications,
+    footer {
+        padding: 20px;
+
+        background-color: #1e1e1e;
+        border-radius: 10px;
+    }
+
+    .skills ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .skills li {
+        display: inline-block;
+        background: #00ff00;
+        color: #121212;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .skills li {
+        display: inline-block;
+        background: #00ff00;
+        color: #121212;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .project-card {
+        background-color: #333333;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    .certificates img {
+        width: 150px;
+        margin: 10px;
+    }
+
+    footer .contact-links a {
+        color: #00ff00;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    footer .contact-links a:hover {
+        text-decoration: underline;
+    }
+
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .project-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 10px 0;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+        margin-top: 0;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .project-details-overlay {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: none;
+        width: 90%;
+        max-width: 800px;
+    }
+
+    .project-details-overlay h3 {
+        margin-top: 0;
+    }
+
+    .project-details-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .project-details-content img {
+        max-width: 40%;
+        border-radius: 8px;
+    }
+
+    .overlay-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        display: none;
+    }
+
+    .close-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+</style>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        <div class="profile-card">
+            <img src="profile.jpg" alt="Profile Image" class="profile-image">
+            <h1>Hello, I am <span class="name"> amar dhale </span></h1>
+            <p class="role">Data Analyst</p>
+            <p class="contact-info">
+                <a href="mailto: amar dhale1242000@gmail.com"> amar dhale1242000@gmail.com</a> |
+                +91 8075500429
+            </p>
+            <button class="btn-resume">Resume</button>
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Extracurricular & Certifications</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-        </ul>
     </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Amar Dhale</h1>
-            <h2>Data Analyst | Power BI </h2>
-            <a href="github.com/amard3p" class="btn-rounded-white">GitHub</a>
-            <a href="/AmarDhaleResume.pdf" class="btn-rounded-white"  download >Download Resume</a>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm an aspiring Data Analyst with a strong foundation in statistics and a real love for making sense of
+            data.
+            I hold a Master's degree in statistics and a Bachelor's in Mathematics, which led me into the world of
+            data-driven analysis.
+            Using tools like Excel, Power BI, SQL, and Python, I've worked hard to dig into data to uncover insights
+            that can help businesses make smarter decisions.
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>Key Skills</h2>
+        <ul>
+            <li>Excel</li>
+            <li>Power BI</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Tableau</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <!-- Add other projectimilarly -->
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Sales Analytics</h3>
+            <img src="project1.gif" alt="Sales Analytics">
+
+            <p>Created an extensive sales analytics dashboard for Atliq Hardware.</p>
+            <button onclick="toggleProjectDetails('project1-details')" class="btn-resume">See My Work</button>
         </div>
-        <!-- End #lead-content -->
 
-        <div id="lead-overlay"></div>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Coffee Shop Dashboard</h3>
+            <img src="project2.gif" alt="Coffee Shop Dashboard">
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
+            <p>Developed an interactive dashboard to track daily sales and inventory metrics.</p>
+            <button onclick="toggleProjectDetails('project2-details')" class="btn-resume">See My Work</button>
         </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
+        <!-- Overlay Background -->
+        <div id="overlay-background" class="overlay-background" onclick="closeProjectDetails()"></div>
+
+        <!-- Project 1 Details Popup -->
+        <div id="project1-details" class="project-details-overlay">
+            <button class="close-button" onclick="closeProjectDetails()">X</button>
+            <h3>Sales Analytics & P&L Reporting for Atliq Hardware</h3>
+            <div class="project-details-content">
+                <div>
+                    <p><strong>Domain/Function:</strong> Finance/Accounting, Business Intelligence</p>
                     <p>
-                        Hi, I'm a passionate data analyst with a focus on leveraging data-driven insights to drive
-                        business decisions and optimize performance. I specialize in using Power BI, a powerful business
-                        intelligence tool, to transform complex data into visually compelling and interactive
-                        dashboards.
+                        Automated financial data cleaning and report generation using Excel Power Query and DAX,
+                        reducing manual effort by over 4 hours weekly. Designed dynamic reports that allowed real-time
+                        financial insights.
                     </p>
+                    <a href="#" class="btn">View Project</a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div style="background: #f2f2f2;height: 100px;"></div>
-    <!-- End #about -->
-    <div id="education" style="background: white;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4" style="top: 30px;">
-                        <h2 class="heading" ">Education</h2>
-                    </div>
-                    <div class=" col-md-8">
-                            <h3>MIT Aurangabad</h3>
-                            <h4>Bachelor of Engineering (BE) in Computer Science (CSE) <i> - Dec 2020</i></h4>
-                    </div>
-                </div>
+                <img src="project1.gif" alt="Sales Analytics">
             </div>
         </div>
 
-        <!-- End #education -->
-
- <div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-        <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-            <!-- Project: Hospitality -->
-            <div class="project shadow-large col-md-4" style="width: 48%; margin-bottom: 20px; position: relative; overflow: hidden;">
-                <div class="project-image">
-                    <img src="projects/CodeBasics.io_hospitality%20domain/CodeBasic.io%20%20Hospitality%20Domain%20Dashboard%20.jpg" style="width: 100%; transition: transform 0.3s ease;" alt="Hospitality Dashboard Image">
-                </div>
-                <!-- End .project-image -->
-                <div class="project-info" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
-                    <h3>Hospitality Domain Dashboard</h3>
-                    <p>The Hospitality Dashboard provides key insights into hotel performance, focusing on revenue, occupancy rates, and booking trends. Highlights include:
-                    <ul>
-                        <li><b>Revenue:</b> Total of 1.69 billion, with 61.62% from business and 38.38% from luxury categories.</li>
-                        <li><b>RevPAR:</b> Revenue per available room stands at 7,337, indicating efficient room revenue generation.</li>
-                        <li><b>DSRN:</b> 2,528 daily sellable room nights over the given period.</li>
-                    </ul>
+        <!-- Project 2 Details Popup -->
+        <div id="project2-details" class="project-details-overlay">
+            <button class="close-button" onclick="closeProjectDetails()">X</button>
+            <h3>Coffee Shop Dashboard</h3>
+            <div class="project-details-content">
+                <div>
+                    <p><strong>Domain/Function:</strong> Business Intelligence, Operations Management</p>
+                    <p>
+                        Built a dashboard to provide real-time insights into coffee shop sales trends, inventory levels,
+                        and customer preferences using Power BI and Excel.
                     </p>
-                    <a href="https://github.com/amard3p/amard3p.github.io/blob/70a95782221431e399dbb8a1c9fe70be49648ec4/projects/CodeBasics.io_hospitality%20domain/CodeBasics.io_hospitality%20domain%20%20report.md" class="btn-rounded" style="color: #fff; text-decoration: underline;">View Project</a>
+                    <a href="#" class="btn">View Project</a>
                 </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-
-            <!-- Project: Diversity and Inclusion -->
-            <div class="project shadow-large col-md-8" style="width: 48%; margin-bottom: 20px; position: relative; overflow: hidden;">
-                <div class="project-image">
-                    <img src="projects/Diversity%20and%20Inclusion/Screenshot%202024-08-24%20070605.jpg" style="width: 100%; transition: transform 0.3s ease;" alt="Diversity and Inclusion Image">
-                </div>
-                <!-- End .project-image -->
-                <div class="project-info" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
-                    <h3>Diversity and Inclusion Analysis</h3>
-                    <p>Comprehensive analysis of workplace diversity and inclusion focusing on hiring, promotion, and workplace culture. Key findings:
-                    <ul>
-                        <li><b>Initiatives:</b> Designed training and awareness programs to foster inclusivity.</li>
-                        <li><b>Gender Split:</b> Executive roles showed improvement: FY20 - 12.5% Female, FY21 - 15.79% Female.</li>
-                        <li><b>Outcomes:</b> Enhanced employee engagement and improved workplace culture.</li>
-                    </ul>
-                    </p>
-                    <a href="https://github.com/amard3p/amard3p.github.io/blob/7950c21fb90368010de6aea086ec7674a121de66/projects/Diversity%20and%20Inclusion/Diversity%20and%20Inclusion%20README.MD" class="btn-rounded" style="color: #fff; text-decoration: underline;">View Project</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-        </div>
-    </div>
-</div>
-<!-- End #projects -->
-
-<script>
-    document.querySelectorAll('.project').forEach(project => {
-        const image = project.querySelector('.project-image img');
-        const info = project.querySelector('.project-info');
-
-        project.addEventListener('mouseenter', () => {
-            image.style.transform = 'scale(1.1)';
-            info.style.opacity = '1';
-        });
-
-        project.addEventListener('mouseleave', () => {
-            image.style.transform = 'scale(1)';
-            info.style.opacity = '0';
-        });
-
-        project.addEventListener('click', () => {
-            const link = info.querySelector('a');
-            if (link) {
-                window.open(link.href, '_blank');
-            }
-        });
-    });
-</script>
-
-        <!-- End #projects -->
-
-        <div id="skills">
-            <h2 class="heading">Skills</h2>
-            <ul>
-                <li>Power BI</li>
-                <li>Data Analysis</li>
-                <li>Excel</li>
-                <li>Python</li>
-                <li>Data Analytics </li>               
-                <li>SQL</li>
-                <li>PostgreSQL</li>
-            </ul>
-        </div>
-        <!-- End #skills -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Extracurricular & Certifications</h2>
-        <div id="experience-timeline">
-            <div data-date="February 2024">
-                <h3>PwC Switzerland Power BI Job Simulation on Forage </h3>
-                <h4>| Power BI Developer |</h4>
-                <p>
-                <ul> <li> Completed a job simulation where I strengthened my PowerBI skills to better
-                    understand clients and their data visualisation needs.</li></ul>
-                <ul> <li> Demonstrated expertise in data visualization through the creation of Power BI
-                    dashboards that effectively conveyed KPIs, showcasing the ability to respond
-                    to client requests with well-designed solutions.</li></ul>
-                <ul> <li> Strong communication skills reflected in the concise and informative email
-                    communication with engagement partners, delivering valuable insights and
-                    actionable suggestions based on data analysis.</li></ul>
-                <ul> <li>Leveraged analytical problem-solving skills to examine HR data, particularly
-                    focusing on gender-related KPIs, and identified root causes for gender
-                    balance issues at the executive management level, highlighting a commitment
-                    to data-driven decision-making.</li></ul>
-                </p>
-                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_G6LMbQK9mwrAeWLzs_1707838452636_completion_certificate.pdf" class="btn-rounded-black"  download ><button type="button" class="btn btn-link">Download Certificate</button></a>
+                <img src="project2.gif" alt="Coffee Shop Dashboard">
             </div>
         </div>
-        <div style="height:50px;"></div>
-        <!-- End #experience -->
+    </section>
 
-        <div>
-            
+
+
+
+    <section class="experience">
+        <h2>My Experience</h2>
+        <p>
+            <strong>Student Intern - Laptop Price Prediction</strong> <br>
+            April - May 2025 <br>
+            Developed a machine learning model using Python to predict laptop prices.
+        </p>
+    </section>
+
+    <section class="certifications">
+        <h2>Awards & Certifications</h2>
+        <div class="certificates">
+            <img src="certificate1.jpg" alt="Certificate 1">
+            <img src="certificate2.jpg" alt="Certificate 2">
         </div>
-        
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 copyright">
-                        <p>
-                            Copyright &copy; <span id="current-year">2024</span>AMARDHALE
-                            
-                        </p>
-                    </div>
-                    <div class="col-sm-2 top">
-                        <span id="to-top">
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End footer -->
+    </section>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/scripts.min.js"></script>
+    <footer>
+        <h2>Let's Connect</h2>
+        <p>Feel free to reach out to discuss new projects or opportunities.</p>
+        <div class="contact-links">
+            <a href="mailto: amar dhale1242000@gmail.com">Email</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+    < script>
+        function toggleProjectDetails(projectId) {
+            document.getElementById("overlay-background").style.display = "block";
+            document.getElementById(projectId).style.display = "block";
+        }
+
+        function closeProjectDetails() {
+            document.getElementById("overlay-background").style.display = "none";
+            const overlays = document.querySelectorAll(".project-details-overlay");
+            overlays.forEach(overlay => overlay.style.display = "none");
+        }
+    </script>
 </body>
 
 </html>
