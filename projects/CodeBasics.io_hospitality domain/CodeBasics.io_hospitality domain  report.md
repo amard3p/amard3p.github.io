@@ -7,8 +7,8 @@ period of time. The dashboard is divided into several key areas: revenue metrics
 percentages, and booking trends by various categories.
 
 #### Key Metrics
-![CODEBASICS Hospitality Domain](https://github.com/amard3p/amard3p.github.io/blob/b1cf6afc36125ff3826ea5d6621e231572e2fe98/projects/CodeBasics.io_hospitality%20domain/CodeBasic.io%20%20Hospitality%20Domain%20Dashboard%20.jpg)
-<a href='https://public.tableau.com/views/CODEBASICSHospitalityDomainDashboardAnalysisReport/AtliqHospitalityOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> live Dashboard</a> dashboard(https://public.tableau.com/views/CODEBASICSHospitalityDomainDashboardAnalysisReport/AtliqHospitalityOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
+![CODEBASICS Hospitality Domain]([https://github.com/amard3p/amard3p.github.io/blob/b1cf6afc36125ff3826ea5d6621e231572e2fe98/projects/CodeBasics.io_hospitality%20domain/CodeBasic.io%20%20Hospitality%20Domain%20Dashboard%20.jpg](https://github.com/amard3p/amard3p.github.io/blob/fd3cec2e2f2adea2cef135c195328c9c6a0650ff/projects/CodeBasics.io_hospitality%20domain/Atliq%20Hospitality%20Overview.png))
+<a href='https://public.tableau.com/views/CODEBASICSHospitalityDomainDashboardAnalysisReport/AtliqHospitalityOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> live Dashboard</a>  
 1. **Revenue**:  
    - Total revenue realized is **1.69 billion** with a week-over-week growth rate of **0.002**.
    - Revenue is broken down by categories such as luxury and business, where **61.62%** of the revenue comes from the business category, 
