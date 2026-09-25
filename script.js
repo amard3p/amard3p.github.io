@@ -1,37 +1,990 @@
-// Simple scroll reveal animation
+<!DOCTYPE html>
+<html lang="en">
 
-const elements = document.querySelectorAll(
-    ".skill-card, .project-card, .education-card, .timeline-item, .process-step"
-);
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-const observer = new IntersectionObserver(
-    (entries) => {
+    <meta name="description"
+          content="SAP MM Fresher Portfolio - Aspiring SAP MM Consultant with knowledge of procurement, inventory management, material master and SAP S/4HANA.">
 
-        entries.forEach((entry) => {
+    <meta name="keywords"
+          content="SAP MM Fresher, SAP MM Consultant, SAP S/4HANA, Procurement, Inventory Management, Material Master">
 
-            if (entry.isIntersecting) {
+    <meta name="author" content="Your Name">
 
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+    <title>Your Name | SAP MM Fresher</title>
 
-                observer.unobserve(entry.target);
-            }
+    <link rel="stylesheet" href="style.css">
 
-        });
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    },
-    {
-        threshold: 0.12
-    }
-);
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
 
 
-elements.forEach((element) => {
+<body>
 
-    element.style.opacity = "0";
-    element.style.transform = "translateY(20px)";
-    element.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+<!-- ================= NAVBAR ================= -->
 
-    observer.observe(element);
+<header class="navbar">
 
-});
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            SAP<span>MM</span>
+        </a>
+
+        <nav aria-label="Main Navigation">
+            <a href="#about">About</a>
+            <a href="#certification">Certification</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="resume.pdf"
+           class="nav-btn"
+           target="_blank"
+           rel="noopener">
+            Resume
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="availability">
+                <span></span>
+                Open to Entry-Level Opportunities
+            </div>
+
+            <p class="eyebrow">
+                SAP MM FRESHER
+            </p>
+
+            <h1>
+                Hello, I'm
+                <span>Your Name</span>
+            </h1>
+
+            <h2>
+                SAP S/4HANA Sourcing & Procurement Professional
+            </h2>
+
+
+            <!-- FEATURED SAP CERTIFICATION -->
+
+            <div class="featured-certification">
+
+                <div class="certification-badge">
+                    <span class="certification-check">✓</span>
+                </div>
+
+                <div class="certification-details">
+
+                    <span class="certification-label">
+                        SAP CERTIFIED
+                    </span>
+
+                    <h3>
+                        SAP S/4HANA Cloud Private Edition,
+                        Sourcing and Procurement
+                    </h3>
+
+                    <p>
+                        Certification: C_TS452_2601
+                    </p>
+
+                    <div class="certification-info">
+
+                        <span>
+                            ✓ Certified
+                        </span>
+
+                        <span>
+                            •
+                        </span>
+
+                        <span>
+                            C_TS452_2601
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="hero-text">
+                SAP MM professional with a strong foundation in
+                sourcing and procurement, purchasing, inventory
+                management and SAP S/4HANA business processes.
+            </p>
+
+            <p class="hero-text">
+                Looking for an opportunity to apply my SAP knowledge,
+                gain hands-on project experience and contribute to
+                business process transformation.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="resume.pdf"
+                   class="btn secondary"
+                   target="_blank"
+                   rel="noopener">
+                    Download Resume
+                </a>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/"
+                   target="_blank"
+                   rel="noopener">
+                    GitHub
+                </a>
+
+                <a href="mailto:your.email@example.com">
+                    Email
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE CARD -->
+
+        <div class="hero-card">
+
+            <div class="terminal-top">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="terminal-content">
+
+                <p>
+                    <span class="green">sap_mm</span> $ profile
+                </p>
+
+                <p>
+                    <span class="blue">Name:</span>
+                    Your Name
+                </p>
+
+                <p>
+                    <span class="blue">Role:</span>
+                    SAP MM Professional
+                </p>
+
+                <p>
+                    <span class="blue">Certification:</span>
+                    <span class="green">C_TS452_2601</span>
+                </p>
+
+                <p>
+                    <span class="blue">Specialization:</span>
+                    Sourcing & Procurement
+                </p>
+
+                <p>
+                    <span class="blue">Platform:</span>
+                    S/4HANA Cloud Private Edition
+                </p>
+
+                <p>
+                    <span class="blue">Career Level:</span>
+                    Entry Level
+                </p>
+
+                <p>
+                    <span class="blue">Status:</span>
+                    <span class="green">Available</span>
+                </p>
+
+                <br>
+
+                <p>
+                    <span class="green">$</span>
+                    learning --continuous
+                </p>
+
+                <p class="cursor">_</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+``
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-number">01</p>
+
+            <div>
+                <p class="section-label">
+                    PROFILE
+                </p>
+
+                <h2>
+                    About Me
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am an aspiring SAP MM professional at the beginning
+                    of my career, with a strong interest in enterprise
+                    resource planning, procurement and materials management.
+                </p>
+
+                <p>
+                    I have developed foundational knowledge of SAP MM
+                    processes including material master, purchase
+                    requisitions, purchase orders, goods receipt,
+                    invoice verification and inventory management.
+                </p>
+
+                <p>
+                    My learning approach combines functional concepts
+                    with practical business scenarios and project-based
+                    exercises to better understand how SAP supports
+                    real-world procurement and inventory processes.
+                </p>
+
+                <p>
+                    I am currently seeking an entry-level SAP MM
+                    opportunity where I can apply my knowledge,
+                    gain practical exposure and grow as an SAP
+                    functional professional.
+                </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <div class="info-item">
+                    <span>Career Level</span>
+                    <strong>Fresher</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Module</span>
+                    <strong>SAP MM</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Platform</span>
+                    <strong>SAP S/4HANA</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Focus</span>
+                    <strong>Procurement & Inventory</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Career Goal</span>
+                    <strong>SAP MM Consultant</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATION ================= -->
+
+<section id="certification" class="section dark-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-number">02</p>
+
+            <div>
+                <p class="section-label">
+                    CREDENTIALS
+                </p>
+
+                <h2>
+                    Certification & Training
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="certification-grid">
+
+
+            <div class="certification-card">
+
+                <div class="certification-icon">
+                    SAP
+                </div>
+
+                <div class="certification-content">
+
+                    <span class="card-label">
+                        SAP TRAINING
+                    </span>
+
+                    <h3>
+                        SAP MM Training
+                    </h3>
+
+                    <p>
+                        SAP Materials Management training covering
+                        procurement, purchasing, material master,
+                        inventory management and related business
+                        processes.
+                    </p>
+
+                    <div class="certification-meta">
+                        <span>Completed / In Progress</span>
+                        <span>•</span>
+                        <span>20XX</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="certification-card">
+
+                <div class="certification-icon">
+                    S/4
+                </div>
+
+                <div class="certification-content">
+
+                    <span class="card-label">
+                        PLATFORM
+                    </span>
+
+                    <h3>
+                        SAP S/4HANA Procurement
+                    </h3>
+
+                    <p>
+                        Learning modern SAP S/4HANA procurement
+                        concepts and business scenarios with a focus
+                        on Materials Management.
+                    </p>
+
+                    <div class="certification-meta">
+                        <span>Learning</span>
+                        <span>•</span>
+                        <span>Current</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="certification-card">
+
+                <div class="certification-icon">
+                    ✓
+                </div>
+
+                <div class="certification-content">
+
+                    <span class="card-label">
+                        CERTIFICATION
+                    </span>
+
+                    <h3>
+                        Your SAP Certification
+                    </h3>
+
+                    <p>
+                        Add your official SAP certification name,
+                        certification ID or credential information here.
+                    </p>
+
+                    <div class="certification-meta">
+                        <span>Year</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-number">03</p>
+
+            <div>
+                <p class="section-label">
+                    EXPERTISE
+                </p>
+
+                <h2>
+                    SAP MM Skills
+                </h2>
+            </div>
+
+        </div>
+
+
+        <p class="section-intro">
+            Core SAP MM concepts and functional areas I am currently
+            developing through training and practical learning.
+        </p>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    MM
+                </div>
+
+                <h3>
+                    Material Master
+                </h3>
+
+                <p>
+                    Understanding of material types, organizational
+                    levels, master data structure and procurement-related
+                    information.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    PR
+                </div>
+
+                <h3>
+                    Purchase Requisition
+                </h3>
+
+                <p>
+                    Knowledge of purchase requisitions and their role
+                    in communicating internal procurement requirements.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    PO
+                </div>
+
+                <h3>
+                    Purchase Order
+                </h3>
+
+                <p>
+                    Understanding of purchasing data, purchase order
+                    creation and supplier procurement processes.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    GR
+                </div>
+
+                <h3>
+                    Goods Receipt
+                </h3>
+
+                <p>
+                    Foundational knowledge of goods receipt,
+                    material documents and inventory updates.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    IV
+                </div>
+
+                <h3>
+                    Invoice Verification
+                </h3>
+
+                <p>
+                    Understanding of invoice verification and its
+                    relationship with purchase orders and goods receipt.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    IM
+                </div>
+
+                <h3>
+                    Inventory Management
+                </h3>
+
+                <p>
+                    Knowledge of stock movements, storage locations,
+                    inventory concepts and material movements.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="tech-stack">
+
+            <span>SAP MM</span>
+            <span>SAP S/4HANA</span>
+            <span>Procurement</span>
+            <span>Inventory Management</span>
+            <span>Material Master</span>
+            <span>Purchasing</span>
+            <span>Business Processes</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section dark-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-number">04</p>
+
+            <div>
+                <p class="section-label">
+                    PRACTICAL WORK
+                </p>
+
+                <h2>
+                    SAP MM Projects
+                </h2>
+            </div>
+
+        </div>
+
+
+        <p class="section-intro">
+            Practical learning projects demonstrating my understanding
+            of SAP MM concepts and business scenarios.
+        </p>
+
+
+        <div class="projects-grid">
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-label">
+                        SAP MM
+                    </span>
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+                <h3>
+                    Procure-to-Pay Scenario
+                </h3>
+
+                <p>
+                    Studied and documented an end-to-end procurement
+                    scenario covering purchase requisition, purchase
+                    order, goods receipt and invoice verification.
+                </p>
+
+                <div class="project-tags">
+                    <span>PR</span>
+                    <span>PO</span>
+                    <span>GR</span>
+                    <span>Invoice</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-label">
+                        SAP MM
+                    </span>
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+                <h3>
+                    Material Master Study
+                </h3>
+
+                <p>
+                    Created a structured learning project covering
+                    material types, organizational levels and
+                    procurement-related material master information.
+                </p>
+
+                <div class="project-tags">
+                    <span>Material Master</span>
+                    <span>Master Data</span>
+                    <span>Procurement</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-label">
+                        SAP MM
+                    </span>
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+                <h3>
+                    Inventory Management Scenario
+                </h3>
+
+                <p>
+                    Practiced a business scenario involving stock
+                    management, material movements, storage locations
+                    and inventory-related processes.
+                </p>
+
+                <div class="project-tags">
+                    <span>Inventory</span>
+                    <span>Stock</span>
+                    <span>Movement</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-label">
+                        SAP MM
+                    </span>
+
+                    <span>
+                        04
+                    </span>
+
+                </div>
+
+                <h3>
+                    Procurement Documentation
+                </h3>
+
+                <p>
+                    Prepared process documentation to understand the
+                    relationship between purchasing activities,
+                    material receipt and invoice verification.
+                </p>
+
+                <div class="project-tags">
+                    <span>Documentation</span>
+                    <span>Business Process</span>
+                    <span>SAP MM</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-number">05</p>
+
+            <div>
+                <p class="section-label">
+                    BACKGROUND
+                </p>
+
+                <h2>
+                    Education
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="education-grid">
+
+
+            <div class="education-card">
+
+                <span class="card-label">
+                    EDUCATION
+                </span>
+
+                <h3>
+                    Your Degree
+                </h3>
+
+                <p>
+                    Your University / College
+                </p>
+
+                <small>
+                    20XX – 20XX
+                </small>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <span class="card-label">
+                    SAP TRAINING
+                </span>
+
+                <h3>
+                    SAP MM Training
+                </h3>
+
+                <p>
+                    SAP MM / SAP S/4HANA Procurement
+                </p>
+
+                <small>
+                    Completed / In Progress
+                </small>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <span class="card-label">
+                    ADDITIONAL
+                </span>
+
+                <h3>
+                    Additional Qualification
+                </h3>
+
+                <p>
+                    Add another relevant qualification,
+                    course or achievement here.
+                </p>
+
+                <small>
+                    20XX
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="container contact-container">
+
+        <p class="section-number">
+            06
+        </p>
+
+        <p class="section-label">
+            GET IN TOUCH
+        </p>
+
+        <h2>
+            Let's Connect
+        </h2>
+
+        <p>
+            I am actively looking for an entry-level SAP MM opportunity
+            where I can apply my knowledge, gain practical experience,
+            learn from experienced professionals and contribute to
+            business processes.
+        </p>
+
+
+        <div class="contact-buttons">
+
+            <a href="mailto:your.email@example.com"
+               class="btn primary">
+                Email Me
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener"
+               class="btn secondary">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener"
+               class="btn secondary">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-container">
+
+        <p>
+            © 2026 Your Name. All rights reserved.
+        </p>
+
+        <p>
+            SAP MM • S/4HANA • Procurement • Inventory
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
