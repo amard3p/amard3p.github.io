@@ -115,6 +115,181 @@ nav a:hover {
 
 /* HERO */
 
+/* ================= FEATURED SAP CERTIFICATION ================= */
+
+.featured-certification {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin: 30px 0;
+
+    max-width: 650px;
+
+    padding: 20px 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 255, 170, 0.12),
+            rgba(0, 160, 255, 0.08)
+        );
+
+    border: 1px solid rgba(0, 255, 170, 0.45);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 170, 0.08),
+        0 15px 45px rgba(0, 0, 0, 0.20);
+}
+
+
+/* Small accent line */
+
+.featured-certification::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 18px;
+    bottom: 18px;
+
+    width: 3px;
+
+    background: #00d084;
+
+    border-radius: 10px;
+}
+
+
+/* Certification icon */
+
+.certification-badge {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #00d084;
+
+    color: #06130f;
+
+    box-shadow:
+        0 0 25px rgba(0, 208, 132, 0.40);
+}
+
+
+.certification-check {
+    font-size: 29px;
+    font-weight: 800;
+}
+
+
+/* Certification content */
+
+.certification-details {
+    min-width: 0;
+}
+
+
+.certification-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #00d084;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+
+.certification-details h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    line-height: 1.45;
+
+    font-weight: 700;
+}
+
+
+.certification-details p {
+    margin: 7px 0 8px;
+
+    color: #aeb9c4;
+
+    font-size: 13px;
+}
+
+
+.certification-info {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 12px;
+
+    color: #8f9aa5;
+}
+
+
+.certification-info span:first-child {
+    color: #00d084;
+
+    font-weight: 700;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .featured-certification {
+        gap: 14px;
+
+        padding: 17px;
+
+        margin: 24px 0;
+    }
+
+    .certification-badge {
+        width: 48px;
+        height: 48px;
+    }
+
+    .certification-check {
+        font-size: 23px;
+    }
+
+    .certification-details h3 {
+        font-size: 14px;
+    }
+
+    .certification-details p {
+        font-size: 12px;
+    }
+
+}
+```
+
 .hero {
     min-height: 90vh;
 
